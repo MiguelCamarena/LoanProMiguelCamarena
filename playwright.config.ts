@@ -6,6 +6,7 @@ dotenv.config();
 export default defineConfig({
   testDir: './src/api/tests',
   timeout: 30_000,
+  workers: process.env.CI ? 2 : 4,
   expect: {
     timeout: 5_000,
   },

@@ -67,7 +67,8 @@ npm run test:contract
 ```
 
 ## Test Results
-- Tests run in parallel using 16 workers
+- Parallel execution enabled
+- Configured workers: 4 (local) / 2 (CI)
 - Last run: 28 passed, 14 failed (66.67% pass rate)
 
 ## Detailed Test Report
