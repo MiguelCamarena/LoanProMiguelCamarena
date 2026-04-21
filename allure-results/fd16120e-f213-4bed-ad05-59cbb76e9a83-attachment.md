@@ -1,0 +1,23 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: users\contract\user.contract.api.spec.ts >> Users API - Contract Scenarios @contract >> GET /users/{email} for unknown user should match error contract
+- Location: src\api\tests\users\contract\user.contract.api.spec.ts:38:7
+
+# Error details
+
+```
+Error: apiRequestContext.get: connect ECONNREFUSED ::1:3000
+Call log:
+  - → GET http://localhost:3000/dev/users/notfound%40example.com
+    - user-agent: Playwright/1.59.1 (x64; windows 10.0) node/22.14
+    - accept: */*
+    - accept-encoding: gzip,deflate,br
+    - Content-Type: application/json
+
+```
